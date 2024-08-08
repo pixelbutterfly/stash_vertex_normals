@@ -7,11 +7,11 @@ for Blender's lack of a "lock normals" option similar to Maya's. Lock normals st
 Why do you need this?
 Usually Blender's default behavior of constantly updating the normals is exactly what you want. However, there are some practical uses for normal hacking.
 
-Trim sheets. Trim sheets are normal maps that tile in one direction. (include sunset overdrive talk here) Because of how they're made, trim sheets work best on geo that has flat faces and 90 degree corners with hard edges.  However, a common game art trick is to lock the normals and do a wonkify pass on the geo adding tapers, flares, popped edges, and generally creating a more interesting and varied silhouette. Stash Normals allows you to recreate this workflow.
+Trim sheets. Trim sheets are normal maps that tile in one direction. Because of how they're made, trim sheets work best on geo that has flat faces and 90 degree corners with hard edges.  However, a common game art trick is to lock the normals and do a wonkify pass on the geo adding tapers, flares, popped edges, and generally creating a more interesting and varied silhouette. Stash Normals allows you to recreate this workflow.
 
 https://github.com/user-attachments/assets/940015f1-41bf-4c7d-b4d7-2697afc6770c
 
-This is not just limited to trims. It can be used to  punch up your models that use tiling textures. Let's say you have pedestal like this that had a brick tiling texture applied. It would be great if we could pop out some of those bricks on the silhouette but we don't really want the extra mesh normals to be added on top of our baked normals map. What we can do is stash the normals, cut in some edges on the normals, and restore the normals.
+This is not just limited to trims. It can be used to  punch up your models that use tiling textures. Let's say you have a wall like this that had a brick tiling texture applied. It would be great if you could pop out some of those bricks on the silhouette but you don't really want the vert normals to be added on top of the baked normals map. What you can do is stash the normals, cut in some edges on the normals, and restore the normals.
 
 https://github.com/user-attachments/assets/959cd617-fb7b-4564-aebb-1cfedc5fa296
 
