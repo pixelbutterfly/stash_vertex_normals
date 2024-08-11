@@ -6,7 +6,7 @@ Stash Normals is a Blender addon for saving and restoring the vertex normals on 
 for Blender's lack of a "lock normals" option similar to Maya's. Lock normals stops the vertex normals from updating while the mesh is edited. Stash Normals doesn't do this, but rather provides a workaround by storing the normals as a color attribute and copying that data back to the normals at a later time.
 
 
-# Why do you need this?
+# Why do you need it?
 
 Usually Blender's default behavior of constantly updating the normals is exactly what you want. However, there are some practical uses for normal hacking.
 
