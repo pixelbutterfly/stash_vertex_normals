@@ -14,7 +14,7 @@ Trim sheets are textures that tile in one direction, often used in games for bui
 
 https://github.com/user-attachments/assets/940015f1-41bf-4c7d-b4d7-2697afc6770c
 
-It can also be used to punch up your models that use tiling textures. Let's say you have a wall with a tiling brick texture applied. It would be great if you could pop out some of the bricks on the corners to improve the silhouette, but you don't really want the extra mesh normals to be added on top of your normals map. Stash Normals allows you to store the normals, model in some bricks, and restore the normals so the original shading is preserved.
+It can also be used to punch up your models that use tiling textures. Let's say you have a wall with a tiling brick texture applied. It would be great if you could pop out some of the bricks on the corners to improve the silhouette, but you don't really want the extra vert normals to be added on top of your normals map. Stash Normals allows you to store the normals, model in some bricks, and restore the normals so the original shading is preserved.
 
 https://github.com/user-attachments/assets/959cd617-fb7b-4564-aebb-1cfedc5fa296
 
@@ -30,7 +30,8 @@ https://github.com/user-attachments/assets/d63229b3-d3f2-4b64-912c-ad74ca03745a
 ## Warning
 After you stash normals, be careful with of how you edit your mesh.  Operations that would result in a split in the UVs will also create a hard split in the vertex colors that will result a sharp edge when converted back to normals.  For this reason, you should merge verts with "mergeUVs" enabled. If you're planning on doing a lot of editing between stashing your normals and restoring them, working with the stored normal attribute visualized as color is suggested.
 
-Special thanks to Philipp Seifried who's [convert normals to vertex color](https://github.com/Philipp-Seifried/Blender-Normals-To-Vertex-Color) was an inspiration for this tool.
+## Special Thanks
+Thank you to Philipp Seifried who's [convert normals to vertex color](https://github.com/Philipp-Seifried/Blender-Normals-To-Vertex-Color) was an inspiration for this tool.
 
 ## Installation
 ## (3.0 to 4.1)
