@@ -31,7 +31,7 @@ https://github.com/user-attachments/assets/d63229b3-d3f2-4b64-912c-ad74ca03745a
 After you stash normals, be careful with of how you edit your mesh.  Operations that would result in a split in the UVs will also create a hard split in the vertex colors that will result a sharp edge when converted back to normals.  For this reason, you should merge verts with "mergeUVs" enabled. If you're planning on doing a lot of editing between stashing your normals and restoring them, working with the stored normal attribute visualized as color is suggested.
 
 ## Special Thanks
-Thank you to Philipp Seifried who's [convert normals to vertex color](https://github.com/Philipp-Seifried/Blender-Normals-To-Vertex-Color) was an inspiration for this tool.
+Thank you to Philipp Seifried whose [convert normals to vertex color](https://github.com/Philipp-Seifried/Blender-Normals-To-Vertex-Color) was an inspiration for this tool.
 
 ## Installation
 ## (3.0 to 4.1)
