@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/abe25f61-f055-417a-8c78-cb77e27df565
 It can also work for preserving normals on models that have been split up into pieces.
 A common example is a character model where the head needs to be separated from the body for customization. You can stash the normals, separate the pieces, and restore the normals to get the original shading back.
 
-https://github.com/user-attachments/assets/c77546de-efea-48bf-af4a-ae158bb30104
+https://github.com/user-attachments/assets/d63229b3-d3f2-4b64-912c-ad74ca03745a
 
 ## Warning
 After you stash normals, be careful with of how you edit your mesh.  Operations that would result in a split in the UVs will also create a hard split in the vertex colors that will result a sharp edge when converted back to normals.  For this reason, you should merge verts with "mergeUVs" enabled. If you're planning on doing a lot of editing between stashing your normals and restoring them, working with the stored normal attribute visualized as color is suggested.
