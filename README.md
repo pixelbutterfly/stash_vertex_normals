@@ -25,7 +25,7 @@ https://github.com/user-attachments/assets/71f1ae06-0391-4771-a957-61bf15a317e3
 It can also work for preserving normals on models that have been split up into pieces.
 A common example is a character model where the head needs to be separated from the body for customization. You can stash the normals, separate the pieces, and retrieve the normals to get the original shading back.
 
-https://github.com/user-attachments/assets/f323c733-75a9-4518-9130-6f45513a3567
+https://github.com/user-attachments/assets/88051228-c36c-4f6f-93d8-01770f094d9a
 
 
 ## Warning
