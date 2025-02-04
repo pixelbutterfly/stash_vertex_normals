@@ -2,13 +2,11 @@
 
 # What is this?
 
-Stash Normals is a Blender addon for saving and restoring the vertex normals on a mesh. I wrote it to compensate
-for Blender's lack of a "lock normals" option similar to Maya's. Lock normals stops the vertex normals from updating while the mesh is edited. Stash Normals doesn't do this, but rather provides a workaround by storing the normals as a color attribute and copying that data back to the normals at a later time.
-
+Stash Normals is a Blender addon for saving and restoring the vertex normals on a mesh. It copies the normal values to a color attribute, then pastes them back at a later time. It was made as a workaround for Blender's lack of a "lock normals" option similar to Maya's.
 
 # Why do you need it?
 
-Usually Blender's default behavior of constantly updating the normals is exactly what you want. However, there are some practical uses for normal hacking.
+Usually Blender's default behavior of constantly updating the normals as the mesh changes is exactly what you want. However, there are some practical uses for normal hacking.
 
 Trim sheets are textures that tile in one direction, often used in games for building architecture. Because of how they're made, trim sheets work best on geo that has flat faces and 90 degree corners with hard edges. However, a common game art trick is to lock the normals and do a wonkify pass on the geo adding tapers, flares, popped edges, and generally creating a more interesting and varied silhouette to make the tiling texture less obvious. Stash Vertex Normals allows you to recreate this workflow in Blender.
 
@@ -29,7 +27,7 @@ https://github.com/user-attachments/assets/88051228-c36c-4f6f-93d8-01770f094d9a
 
 
 ## Warning
-After you stash normals, be careful with how you edit your mesh. Operations that would result in a split in the UVs will also create a hard split in the vertex colors that will result a sharp edge when converted back to normals. For this reason, you should merge verts with "mergeUVs" enabled. If you're planning on doing a lot of editing between stashing your normals and restoring them, working with the stored normal attribute visualized as color is suggested.
+After you stash normals, be careful how you edit your mesh. Operations that would result in a split in the UVs will also create a hard split in the vertex colors that will result a sharp edge when converted back to normals. For this reason, you should merge verts with "mergeUVs" enabled. If you're planning on doing a lot of editing between stashing your normals and restoring them, working with the stored normal attribute visualized as color is suggested.
 
 ## Special Thanks
 Thank you to Philipp Seifried whose [convert normals to vertex color](https://github.com/Philipp-Seifried/Blender-Normals-To-Vertex-Color) addon was an inspiration for this tool.
